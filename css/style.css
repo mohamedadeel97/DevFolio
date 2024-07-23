@@ -1,0 +1,736 @@
+body {
+    background-color: #F5F5F5;
+}
+
+* {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+
+@font-face {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src: url(../webfonts/OpenSans-Bold.ttf);
+}
+
+
+#HOME {
+    background-image: linear-gradient(rgba(000, 000, 000, 0.6), rgba(000, 000, 000, 0.6)), url(../images/hero-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+}
+
+
+
+.dropdown:hover>.dropdown-menu,
+.dropstart:hover>.dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+
+}
+
+
+
+@media screen and (min-width:769px) {
+    .dropstart:hover>.dropdown-menu {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        margin-right: 0.125em;
+
+    }
+}
+
+.nav-link,
+.navbar-brand {
+    color: #fff !important
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.nav-link:hover::after {
+    width: 50px;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 50px;
+
+}
+
+.content h1,
+.content::after {
+    color: #fff;
+}
+
+@keyframes typing {
+
+
+    0% {
+        content: "W|";
+    }
+
+    1% {
+        content: "W|";
+    }
+
+    2% {
+        content: "We|";
+    }
+
+    3% {
+        content: "Web |";
+    }
+
+    4% {
+        content: "Web D|";
+    }
+
+    5% {
+        content: "Web De|";
+    }
+
+    6% {
+        content: "Web Dev|";
+    }
+
+    7% {
+        content: "Web Deve|";
+    }
+
+    8% {
+        content: "Web Devel|";
+    }
+
+    9% {
+        content: "Web Develo|";
+    }
+
+    10% {
+        content: "Web Develop|";
+    }
+
+    11% {
+        content: "Web Develope|";
+    }
+
+    12% {
+        content: "Web Developer|";
+    }
+
+    14% {
+        content: "Web Developer|";
+    }
+
+    15% {
+        content: "Web Develop|";
+    }
+
+    16% {
+        content: "Web Devel|";
+    }
+
+    17% {
+        content: "Web Deve|";
+    }
+
+    18% {
+        content: "Web Dev|";
+    }
+
+    19% {
+        content: "Web De|";
+    }
+
+    20% {
+        content: "Web D|";
+    }
+
+    21% {
+        content: "Web De|";
+    }
+
+    22% {
+        content: "Web Des|";
+    }
+
+    23% {
+        content: "Web Desi|";
+    }
+
+    24% {
+        content: "Web Desig|";
+    }
+
+    25% {
+        content: "Web Design|";
+    }
+
+    26% {
+        content: "Web Designe|";
+    }
+
+    27% {
+        content: "Web Designer|";
+    }
+
+    28% {
+        content: "Web Designer|";
+    }
+
+    29% {
+        content: "Web Designe|";
+    }
+
+    31% {
+        content: "Web Design|";
+    }
+
+    32% {
+        content: "Web Desig|";
+    }
+
+    33% {
+        content: "Web Desi|";
+    }
+
+    34% {
+        content: "Web Des|";
+    }
+
+    35% {
+        content: "Web De|";
+    }
+
+    36% {
+        content: "Web D|";
+    }
+
+    37% {
+        content: "Web |";
+    }
+
+    38% {
+        content: "We|";
+    }
+
+    39% {
+        content: "W|";
+    }
+
+    40% {
+        content: "F|";
+    }
+
+    41% {
+        content: "Fr|";
+    }
+
+    42% {
+        content: "Fro|";
+    }
+
+    43% {
+        content: "Fron|";
+    }
+
+    44% {
+        content: "Front|";
+    }
+
+    45% {
+        content: "FrontE|";
+    }
+
+    46% {
+        content: "FrontEn|";
+    }
+
+    47% {
+        content: "FrontEnd|";
+    }
+
+    48% {
+        content: "FrontEnd D|";
+    }
+
+    49% {
+        content: "FrontEnd Dev|";
+    }
+
+    50% {
+        content: "FrontEnd Devel|";
+    }
+
+    51% {
+        content: "FrontEnd Develop|";
+    }
+
+    53% {
+        content: "FrontEnd Developer|";
+    }
+
+    54% {
+        content: "FrontEnd Develop|";
+    }
+
+    54% {
+        content: "FrontEnd Devel|";
+    }
+
+    55% {
+        content: "FrontEnd Dev|";
+    }
+
+    56% {
+        content: "FrontEnd |";
+    }
+
+    57% {
+        content: "FrontE|";
+    }
+
+    58% {
+        content: "Fron|";
+    }
+
+    59% {
+        content: "Fr|";
+    }
+
+    60% {
+        content: "G|";
+    }
+
+    61% {
+        content: "Gr|";
+    }
+
+    62% {
+        content: "Gra|";
+    }
+
+    63% {
+        content: "Grap|";
+    }
+
+    64% {
+        content: "Graph|";
+    }
+
+    65% {
+        content: "Graphi|";
+    }
+
+    66% {
+        content: "Graphic|";
+    }
+
+    67% {
+        content: "Graphic D|";
+    }
+
+    68% {
+        content: "Graphic D|";
+    }
+
+    69% {
+        content: "Graphic De|";
+    }
+
+    70% {
+        content: "Graphic Des|";
+    }
+
+    71% {
+        content: "Graphic Desi|";
+    }
+
+    72% {
+        content: "Graphic Desig|";
+    }
+
+    73% {
+        content: "Graphic Design|";
+    }
+
+    75% {
+        content: "Graphic Designer|";
+    }
+
+    76% {
+        content: "Graphic Design|";
+    }
+
+    77% {
+        content: "Graphic Desig|";
+    }
+
+    78% {
+        content: "Graphic Des|";
+    }
+
+    79% {
+        content: "Graphic De|";
+    }
+
+    80% {
+        content: "Graphic D|";
+    }
+
+    81% {
+        content: "Graphic|";
+    }
+
+    82% {
+        content: "Graphi|";
+    }
+
+    85% {
+        content: "Graph|";
+    }
+
+    88% {
+        content: "Grap|";
+    }
+
+    91% {
+        content: "Gra|";
+    }
+
+    94% {
+        content: "Gr|";
+    }
+
+    97% {
+        content: "G|";
+    }
+
+    100% {
+        content: "W|";
+    }
+}
+
+.content::after {
+    content: "";
+    font-size: xx-large;
+    font-weight: bold;
+    animation: typing 15s both 0s infinite;
+}
+
+#ABOUT-R h2::after {
+    content: "";
+    height: 0.3rem;
+    width: 9rem;
+    background-color: #0078FF;
+    position: absolute;
+    top: 6rem;
+    left: 0.7rem;
+}
+
+#ABOUT-R {
+    position: relative;
+}
+
+#ABOUT-R p {
+    font-size: large;
+    font-weight: lighter;
+}
+
+#ABOUT-IMG img {
+    border-radius: 0.5rem;
+}
+
+.skills {
+    padding: 20px 0px;
+}
+
+.skill-item {
+    padding: 10px 0px;
+}
+
+.skill-title {
+    overflow: auto;
+}
+
+.progress {
+    height: 0.7rem;
+    border-radius: 0;
+}
+
+.about-content {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#SERVICES-U h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#SERVICES-U p {
+    color: #4E4E4E;
+    font-weight: 400;
+    font-size: medium;
+    position: relative;
+}
+
+#SERVICES-U p::after {
+    content: "";
+    height: 0.3rem;
+    width: 3rem;
+    background-color: #0078FF;
+    position: absolute;
+    top: 2rem;
+    left: 48%;
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.service-item:hover .service-icon {
+    background-color: #0078ff;
+    border: 10px solid #f1f1f1;
+    color: white;
+}
+
+.service-icon {
+    width: 5rem;
+    height: 5rem;
+    padding: 3rem;
+    border: 10px solid #0078ff;
+    color: black;
+    position: relative;
+    font-size: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    border-radius: 50%;
+
+}
+
+.ico-circle {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.service-item-content p {
+    color: #4E4E4E;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.service-item-content h3 {
+    font-weight: 400;
+    font-size: x-large;
+
+}
+
+#counter {
+    background-image: linear-gradient(rgba(25, 95, 176, 0.6), rgba(0, 119, 254, 0.6)), url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 7.5rem 0;
+    background-attachment: fixed;
+}
+
+.counter-circle i {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: #fff solid 0.5rem;
+    padding-top: 0.5rem;
+}
+
+#WORK-L-CONTENT h4 {
+    font-size: large;
+}
+
+#WORK-L-CONTENT a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: lighter;
+}
+
+#WORK-L-CONTENT span {
+    font-size: small;
+    font-weight: lighter;
+    color: #4E4E4E;
+}
+
+#WORK-L-ICON i {
+    border: 0.2rem solid #0078FF;
+    border-radius: 50%;
+    color: #0078FF;
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.4rem;
+    padding-top: 0.3rem;
+}
+
+#WORK-L-IMG {
+    overflow: hidden;
+}
+
+#WORK-L-IMG img {
+    transition: all;
+    transition-duration: 1.5s;
+}
+
+#WORK-L-IMG:hover img {
+    transform: scale(1.5, 1.5);
+
+}
+
+#SLIDER {
+    background-image: linear-gradient(rgba(25, 95, 176, 0.6), rgba(0, 119, 254, 0.6)), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    background-attachment: fixed;
+
+}
+
+#SLIDER-IMG img {
+    border-radius: 50%;
+}
+
+#SLIDER-IMG {
+    width: 8rem;
+    height: 8rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+
+}
+
+.carousel-indicators {
+    bottom: -100px;
+}
+
+#SLIDER-CONTENT {
+    color: #fff;
+
+}
+
+#BLOG {
+    padding: 4.5rem 0;
+
+}
+
+#BLOG-L-CONTENT h5 {
+    padding-top: 1rem;
+
+}
+
+#BLOG-L-CONTENT span {
+    font-weight: lighter;
+    color: #4E4E4E;
+}
+
+#BLUE {
+    background-color: #0078FF;
+    font-weight: lighter;
+    font-size: medium;
+    color: #fff;
+    text-align: center;
+    width: 4rem;
+    position: relative;
+    left: 8.5rem;
+}
+
+#CONTACT {
+    background-image: linear-gradient(rgba(25, 95, 176, 0.6), rgba(0, 119, 254, 0.6)), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    background-attachment: fixed;
+}
+
+#CONTACT-SO-MI-L p {
+    font-weight: lighter;
+    font-size: larger;
+    color: #4E4E4E;
+}
+
+#MAIL {
+    padding: 1.5rem 0;
+    color: #4E4E4E;
+}
+
+.h h6 {
+    padding-left: 1rem;
+    font-weight: 400;
+}
+
+.h {
+    padding: 0.5rem 0;
+}
+
+.IC {
+    margin: 0 1rem;
+    border: #0078FF solid 0.2rem;
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    left: 1rem;
+    transition: all;
+    transition-duration: 1s;
+    border-radius: 50%;
+    position: relative;
+}
+
+.IC i {
+    position: absolute;
+    top: 1.4rem;
+    left: 0.9rem;
+    transition: all;
+    transition-duration: 2s;
+
+}
+
+
+.IC:hover {
+    border: #f1f1f1 solid 0.2rem;
+    background-color: #0078FF;
+
+
+}
+
+.IC:hover i {
+    color: #fff;
+
+}
+
+footer {
+    background: #1A5FC0;
+}
